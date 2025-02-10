@@ -8,6 +8,7 @@ import (
 type ChatCompletionStreamChoiceDelta struct {
 	Content      string        `json:"content,omitempty"`
 	Role         string        `json:"role,omitempty"`
+	ReasoningContent string        `json:"reasoning_content,omitempty"`
 	FunctionCall *FunctionCall `json:"function_call,omitempty"`
 	ToolCalls    []ToolCall    `json:"tool_calls,omitempty"`
 	Refusal      string        `json:"refusal,omitempty"`
